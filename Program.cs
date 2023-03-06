@@ -30,9 +30,7 @@ public class Program
 
     }
 
-
-
-    public static void CreateDemoObject()
+    public void CreateDemoObject()
     {
         Employee object1 = new Employee(); // instance of the class
 
