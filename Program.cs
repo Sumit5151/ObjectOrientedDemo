@@ -28,7 +28,7 @@ public class Program
 
         i++;
         j++;
-        k++;
+        
 
 
 
