@@ -5,23 +5,54 @@ public class Program
 
     public static void Main()
     {
-
-        Console.WriteLine("Employee1 object inforation");
-        Employee employee1 = new Employee();
-        employee1.GetData();
-        employee1.PutData();
-
-
-        Console.WriteLine("Employee2 object inforation");
-        Employee employee2 = new Employee();
-        employee2.GetData();
-        employee2.PutData();
+        Console.WriteLine("doctor1 object");
+        Doctor doctor1 = new Doctor();        
+        doctor1.GetData();
+        doctor1.PutData();
 
 
-        Console.WriteLine("Employee3 object inforation");
-        Employee employee3 = new Employee();
-        employee3.GetData();
-        employee3.PutData();
+        Console.WriteLine("doctor2 object");
+        Doctor doctor2 = new Doctor();
+        doctor2.GetData();
+        doctor2.PutData();
+
+
+
+
+        int i=0;
+        float j=2.1f;
+        string k = "watch";
+        Doctor doctor3 = new Doctor(); ;
+
+        doctor3.Id++;
+
+        i++;
+        j++;
+        k++;
+
+
+
+
+
+        //Doctor.TypeCastingDemo();
+
+
+        //Console.WriteLine("Employee1 object inforation");
+        //Employee employee1 = new Employee();
+        //employee1.GetData();
+        //employee1.PutData();
+
+
+        //Console.WriteLine("Employee2 object inforation");
+        //Employee employee2 = new Employee();
+        //employee2.GetData();
+        //employee2.PutData();
+
+
+        //Console.WriteLine("Employee3 object inforation");
+        //Employee employee3 = new Employee();
+        //employee3.GetData();
+        //employee3.PutData();
 
 
 

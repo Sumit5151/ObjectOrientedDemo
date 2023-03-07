@@ -54,10 +54,18 @@ namespace ObjectOrientedDemo
         public static void CreateObject()
         {
             Employee employee = new Employee();
+            
+        }
+        public static void CreateObject2()
+        {
+            Employee employee = new Employee();
+            int lmn;
         }
 
         public void PutData()
         {
+
+            int xyz;
             Console.WriteLine("Id= " + this.Id);
             Console.WriteLine("Name= " + this.Name);
             Console.WriteLine("Address= " + this.Address);
