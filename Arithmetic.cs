@@ -37,19 +37,40 @@ namespace ObjectOrientedDemo
 
 
 
-
-        public void Mul(int num1, int num2, out int result)  // output parameter
-        {
-             result = num1 * num2;
+        //formal parameter
+        public void Mul(int a, int b, out int result)  // output parameter
+        {            
+            result = a * b;           
         }
 
 
 
-        public void Div(int num1, int num2, ref int result1)  //input-output parameter
+        public void Div(int a, int b, ref int resultnew)  //input-output parameter
         {
-            result1 = result1 + num1 / num2;          
+            resultnew = resultnew + b / a;                  
             
         }
 
+
+        public int Mod(int num1, int num2)
+        {
+            int result = num1 % num2;
+            return result;
+        }
+
+
+        public int ArithmaticOperation(int a, int b, out int substractionResult,
+                                                   out int miltiplicationResult, out int divisionResult,
+                                                   out int modResult)
+        {
+            int additionResult = a + b;
+             substractionResult = a - b;
+             miltiplicationResult = a * b;
+             divisionResult = a / b;
+             modResult = a % b;
+
+
+            return additionResult;
+        }
     }
 }

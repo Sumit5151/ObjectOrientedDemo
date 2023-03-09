@@ -7,14 +7,29 @@ public class Program
     {
 
 
-        Arithmetic arithmetic1 = new Arithmetic();
-        arithmetic1.A = 20;
-        arithmetic1.B = 10;
+        int num1 = 10;
+        int num2 = 20;
+
+
+        CallByValueCallByReference callByValueCallByReference = new CallByValueCallByReference();
+
+        Console.WriteLine("call by value Before calling to function");
+        Console.WriteLine($"Nubmer1 ={num1} Number2 = {num2}");
+
+        callByValueCallByReference.CallByValue(num1,num2);
+
+        Console.WriteLine("call by value After calling to function");
+        Console.WriteLine($"Nubmer1 ={num1} Number2 = {num2}");
 
 
 
-        Arithmetic arithmetic2 = new Arithmetic();
-        arithmetic2.Sub(arithmetic1);
+        Console.WriteLine("call by Reference Before calling to function");
+        Console.WriteLine($"Nubmer1 ={num1} Number2 = {num2}");
+
+        callByValueCallByReference.CallByReference(ref num1,ref num2);
+
+        Console.WriteLine("call by Reference After calling to function");
+        Console.WriteLine($"Nubmer1 ={num1} Number2 = {num2}");
 
 
 
@@ -23,20 +38,48 @@ public class Program
 
 
 
-        arithmetic1.Add(10,20);
-        int result;
+        //  Arithmetic arithmetic1 = new Arithmetic();
+        //  arithmetic1.A = 20;
+        //  arithmetic1.B = 10;
 
-        arithmetic2.Mul(10, 20, out result);
-        Console.WriteLine($"Multiplication of  10  and   20  is =  {result}");
 
-        int result1=10;
-        arithmetic2.Div(20,10, ref result1);
-        Console.WriteLine($"Result =  {result1}");
 
+        //  Arithmetic arithmetic2 = new Arithmetic();
+        //  arithmetic2.Sub(arithmetic1);
 
 
 
 
+
+
+
+
+        //  arithmetic1.Add(10, 20);
+
+        //  int result;
+        //  int num1 = 10, num2 = 20;
+
+        //  //Actual parameter
+        //  arithmetic2.Mul(num1, num2, out result); 
+        //  Console.WriteLine($"Multiplication of  10  and   20  is =  {result}");
+
+
+        //  int resultnew = 10;
+        //  arithmetic2.Div(num1, num2, ref resultnew);
+
+        //  Console.WriteLine($"Result =  {resultnew}");
+
+
+        //  int modeRusult = arithmetic2.Mod(5, 2);
+        //  Console.WriteLine($"Mod of two numbers = " + modeRusult);
+
+
+        //int additionResult =   arithmetic2.ArithmaticOperation(10, 20, out int substrationResult, 
+        //                                              out int multiplicationResult, out int divisionResult,
+        //                                              out int modResult);
+
+        //  Console.WriteLine($"Addition = {additionResult} substraction ={substrationResult}" +
+        //                    $"mulitiplication = {multiplicationResult} division ={divisionResult} mod={modResult}");
 
 
 
